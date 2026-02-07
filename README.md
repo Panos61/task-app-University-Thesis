@@ -114,7 +114,7 @@ server/src/
 │   ├── project/     # Project CRUD, invitations, collaboration
 │   └── task/        # Task CRUD, status updates, assignments
 ├── database/        # PostgreSQL connection pool & migrations
-├── middleware/       # JWT authentication middleware
+├── middleware/      # JWT authentication middleware
 └── index.ts         # Server entry point
 ```
 
@@ -198,12 +198,12 @@ docker compose up db -d
 # Backend
 cd server
 npm install
-npm run dev        # Starts on port 4000
+npm run dev       
 
 # Frontend (in a new terminal)
 cd client
 npm install
-npm run dev        # Starts on port 5173
+npm run dev        
 ```
 
 ### Environment Variables
@@ -211,11 +211,11 @@ npm run dev        # Starts on port 5173
 | Variable | Description | Example |
 |---|---|---|
 | `DB_HOST` | Database host | `db` |
-| `DB_PORT` | Database port | `5432` |
+| `DB_PORT` | Database port | `port` |
 | `DB_USER` | Database user | `postgres` |
-| `DB_PASSWORD` | Database password | `your_password` |
+| `DB_PASSWORD` | Database password | `password` |
 | `DB_NAME` | Database name | `taskapp` |
-| `JWT_SECRET` | Secret for signing tokens | `your_jwt_secret` |
+| `JWT_SECRET` | Secret for signing tokens | `jwt_secret` |
 | `CORS_ORIGIN` | Allowed frontend origin | `http://localhost` |
 | `VITE_API_URL` | Backend URL for frontend | `http://localhost:4000` |
 
